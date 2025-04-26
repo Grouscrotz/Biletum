@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MyTicketsFragment">
+
+    <FrameLayout
+        android:id="@+id/MyTicketsFragment_Frame1"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:background="@drawable/avatar_corner"
+        android:backgroundTint="#37C8C8C8"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/MyTicketsFragment_Frame2">
+        <!-- Номер поезда -->
+        <TextView
+            android:id="@+id/Search_results_number_train"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="#BAECC256"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="Поезд: 6157/6158"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/Search_results_image_train"
+            android:layout_width="230dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_train" />
+        <!-- Время отбытия -->
+        <TextView
+            android:id="@+id/Search_results_tV_time_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_marginStart="5dp"
+            android:text="12:00" />
+        <!-- Время прибытия -->
+        <TextView
+            android:id="@+id/Search_results_tV_time_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="5dp"
+            android:text="19:30" />
+        <!-- Сумма времени в пути -->
+        <TextView
+            android:id="@+id/Search_results_tV_time_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:text="7 ч 30 м"
+            android:textSize="10dp" />
+
+        <!-- Место отправки -->
+        <TextView
+            android:id="@+id/Search_results_tV_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="5dp"
+            android:text="ст. Солнечная"
+            android:textSize="16dp" />
+        <!-- Место прибытия -->
+        <TextView
+            android:id="@+id/Search_results_tV_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:text="ст. Калуга-1"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="5dp"
+            android:drawableEnd="@drawable/ic_ruble"
+            android:text="537.00 "
+            android:textSize="20dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/MyTicketsFragment_Frame2"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:background="@drawable/avatar_corner"
+        android:backgroundTint="#37C8C8C8"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/MyTicketsFragment_Frame1">
+        <!-- Номер поезда -->
+        <TextView
+            android:id="@+id/Search_results_number_train2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="#BAECC256"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="Поезд: 6157/6158"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/Search_results_image_train2"
+            android:layout_width="230dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_train" />
+        <!-- Время отбытия -->
+        <TextView
+            android:id="@+id/Search_results_tV_time_from2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start"
+            android:layout_marginStart="5dp"
+            android:text="12:00" />
+        <!-- Время прибытия -->
+        <TextView
+            android:id="@+id/Search_results_tV_time_to2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="5dp"
+            android:text="19:30" />
+        <!-- Сумма времени в пути -->
+        <TextView
+            android:id="@+id/Search_results_tV_time_sum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:text="7 ч 30 м"
+            android:textSize="10dp" />
+
+        <!-- Место отправки -->
+        <TextView
+            android:id="@+id/Search_results_tV_from2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="5dp"
+            android:text="ст. Солнечная"
+            android:textSize="16dp" />
+        <!-- Место прибытия -->
+        <TextView
+            android:id="@+id/Search_results_tV_to2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:text="ст. Калуга-1"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="5dp"
+            android:drawableEnd="@drawable/ic_ruble"
+            android:text="537.00 "
+            android:textSize="20dp" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

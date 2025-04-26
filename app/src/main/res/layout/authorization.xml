@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Войти в аккаунт"
+        android:textSize="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="96dp" />
+
+    <!-- Подпись к номеру -->
+    <TextView
+        android:id="@+id/Authorization_tV_phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Номер телефона"
+        android:textColor="#BDBDBD"
+        app:layout_constraintBottom_toTopOf="@id/Authorization_textInputLayout_phone"
+        app:layout_constraintStart_toStartOf="@id/Authorization_textInputLayout_phone" />
+
+    <!-- TextInputLayout с иконкой очистки -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Authorization_textInputLayout_phone"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:hint="Номер телефона"
+        app:endIconMode="clear_text"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="290dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Authorization_eT_phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:inputType="phone"
+            android:gravity="center" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Подпись к паролю -->
+    <TextView
+        android:id="@+id/Authorization_tV_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Пароль"
+        android:textColor="#BDBDBD"
+        app:layout_constraintBottom_toTopOf="@id/Authorization_textInputLayout_password"
+        app:layout_constraintStart_toStartOf="@id/Authorization_textInputLayout_password" />
+
+    <!-- TextInputLayout с иконкой очистки -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Authorization_textInputLayout_password"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:hint="Пароль"
+        app:endIconMode="clear_text"
+        app:passwordToggleEnabled="false"
+        app:layout_constraintTop_toBottomOf="@id/Authorization_textInputLayout_phone"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Authorization_eT_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="56dp"
+            android:inputType="numberPassword"
+            android:autofillHints="password"
+            android:gravity="center" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/Authorization_button_authoriz"
+        android:layout_width="315dp"
+        android:layout_height="48dp"
+        android:text="Продолжить"
+        android:textSize="18dp"
+        android:backgroundTint="#53BF57"
+        app:layout_constraintTop_toBottomOf="@id/Authorization_textInputLayout_password"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Authorization_button_authoriz"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Нет аккаунта?" />
+
+        <Button
+            android:id="@+id/Authorization_toRegistr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Зарегистрируйтесь!"
+            android:textColor="#53BF57"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="4dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

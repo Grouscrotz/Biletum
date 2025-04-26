@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SearchFragment">
+
+
+    <!-- Откуда -->
+    <EditText
+        android:id="@+id/FragmentSearch_eT_from"
+        android:layout_width="280dp"
+        android:layout_height="42dp"
+        android:drawableEnd="@drawable/ic_from"
+        android:hint="Откуда"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="156dp"
+        />
+
+    <!-- Поменять местами строки -->
+    <FrameLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/corner_switch"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toBottomOf="@id/FragmentSearch_eT_from"
+        app:layout_constraintBottom_toTopOf="@id/FragmentSearch_eT_to"
+
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_arrows_switch"
+            />
+    </FrameLayout>
+
+
+    <!-- Куда -->
+    <EditText
+        android:id="@+id/FragmentSearch_eT_to"
+        android:layout_width="280dp"
+        android:layout_height="42dp"
+        android:drawableEnd="@drawable/ic_from"
+        android:hint="Куда"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/FragmentSearch_eT_from"
+        android:layout_marginTop="46dp"
+        />
+
+    <!-- Дата -->
+    <EditText
+        android:id="@+id/FragmentSearch_eT_data"
+        android:layout_width="280dp"
+        android:layout_height="42dp"
+        android:drawableEnd="@drawable/ic_calendar"
+        android:hint="Дата"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/FragmentSearch_eT_to"
+        android:layout_marginTop="46dp"
+        />
+
+    <!-- Найти билеты -->
+    <Button
+        android:id="@+id/FragmentSearch_button_search"
+        android:layout_width="280dp"
+        android:layout_height="46dp"
+        android:backgroundTint="@color/green"
+        android:text="Найти билеты"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/FragmentSearch_eT_data"
+        android:layout_marginTop="46dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

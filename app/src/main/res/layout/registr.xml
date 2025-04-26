@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Registr_tv_registr_titul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:text="Зарегистрируйся"
+        android:textSize="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+<!-- Номер телефона -->
+    <EditText
+        android:id="@+id/Registr_eT_phoneNumber"
+        android:layout_width="315dp"
+        android:layout_height="42dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+
+        android:autofillHints="phone"
+        android:background="@drawable/corner_round_et"
+        android:gravity="center"
+        android:hint="Номер телефона"
+
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@id/Registr_eT_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!-- Номер телефона-->
+    <TextView
+        android:id="@+id/Registr_tV_phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Номер телефона"
+        android:textColor="#BDBDBD"
+
+        app:layout_constraintStart_toStartOf="@id/Registr_eT_phoneNumber"
+        app:layout_constraintBottom_toTopOf="@id/Registr_eT_phoneNumber"
+         />
+
+    <!-- Почта -->
+    <EditText
+        android:id="@+id/Registr_eT_email"
+        android:layout_width="315dp"
+        android:layout_height="42dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/corner_round_et"
+
+        android:hint="Почта"
+        android:inputType="text"
+        android:gravity="center"
+
+        app:layout_constraintTop_toBottomOf="@id/Registr_eT_phoneNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Registr_eT_lastname"
+         />
+
+    <!-- Почта-->
+    <TextView
+        android:id="@+id/Registr_tV_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Почта"
+        android:textColor="#BDBDBD"
+
+        app:layout_constraintStart_toStartOf="@id/Registr_eT_email"
+        app:layout_constraintBottom_toTopOf="@id/Registr_eT_email"
+        />
+
+    <!-- Фамилия -->
+    <EditText
+        android:id="@+id/Registr_eT_lastname"
+        android:layout_width="315dp"
+        android:layout_height="42dp"
+
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:background="@drawable/corner_round_et"
+
+        android:hint="Фамилия"
+        android:inputType="text"
+        android:gravity="center"
+
+        app:layout_constraintTop_toBottomOf="@id/Registr_eT_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Registr_eT_name"
+        />
+
+    <!-- Фамилия-->
+    <TextView
+        android:id="@+id/Registr_tV_lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Фамилия"
+        android:textColor="#BDBDBD"
+
+        app:layout_constraintStart_toStartOf="@id/Registr_eT_lastname"
+        app:layout_constraintBottom_toTopOf="@id/Registr_eT_lastname"
+        />
+
+    <!-- Имя -->
+    <EditText
+        android:id="@+id/Registr_eT_name"
+        android:layout_width="315dp"
+        android:layout_height="42dp"
+
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:background="@drawable/corner_round_et"
+
+        android:hint="Имя"
+        android:inputType="text"
+        android:gravity="center"
+
+        app:layout_constraintTop_toBottomOf="@id/Registr_eT_lastname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Registr_eT_middleName"
+        />
+
+    <!-- Имя-->
+    <TextView
+        android:id="@+id/Registr_tV_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Имя"
+        android:textColor="#BDBDBD"
+
+        app:layout_constraintStart_toStartOf="@id/Registr_eT_name"
+        app:layout_constraintBottom_toTopOf="@id/Registr_eT_name"
+        />
+
+    <!-- Отчество -->
+    <EditText
+        android:id="@+id/Registr_eT_middleName"
+        android:layout_width="315dp"
+        android:layout_height="42dp"
+
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:background="@drawable/corner_round_et"
+
+        android:hint="Отчество"
+        android:inputType="text"
+        android:gravity="center"
+
+        app:layout_constraintTop_toBottomOf="@id/Registr_eT_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <!-- Отчество-->
+    <TextView
+        android:id="@+id/Registr_tV_middleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Отчество"
+        android:textColor="#BDBDBD"
+
+        app:layout_constraintStart_toStartOf="@id/Registr_eT_middleName"
+        app:layout_constraintBottom_toTopOf="@id/Registr_eT_middleName"
+        />
+
+    <Button
+        android:id="@+id/Registr_button_registr"
+        android:text="Зарегистрироваться"
+
+        android:layout_width="315dp"
+        android:layout_height="48dp"
+
+        android:backgroundTint="#53BF57"
+        android:layout_marginTop="32dp"
+
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@id/Registr_eT_middleName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+         />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Registr_button_registr"
+        android:layout_marginTop="64dp"
+        >
+
+        <TextView
+            android:id="@+id/Registr_tV_haveAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Уже есть аккаунт?"
+
+            />
+
+        <Button
+            android:id="@+id/Registr_button_toAuthoriz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_marginStart="4dp"
+            android:text="Войти!"
+            android:textColor="#53BF57"
+            android:paddingStart="0dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:paddingEnd="0dp"
+            android:minWidth="0dp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

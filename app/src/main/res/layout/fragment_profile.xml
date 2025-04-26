@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment">
+
+    <!-- Аватарка -->
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/avatar_corner"
+        app:layout_constraintBottom_toTopOf="@id/Profile_button_edit"
+        app:layout_constraintEnd_toStartOf="@id/Profile_button_edit"
+        android:paddingStart="1dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:paddingEnd="1dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_profile_avatar"
+            />
+
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/Profile_button_edit"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableEnd="@drawable/ic_edit"
+        android:text="Редактировать"
+        android:textSize="16dp"
+        android:gravity="start|top"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="4dp"
+        android:textColor="#C9000000"
+        app:strokeColor="#53BF57"
+        app:strokeWidth="1dp"
+        app:layout_constraintEnd_toEndOf="@id/Profile_eT_phoneNumber"
+        app:layout_constraintBottom_toTopOf="@id/Profile_eT_phoneNumber"
+        android:layout_marginBottom="16dp"
+        />
+
+    <!-- Номер телефона -->
+    <TextView
+        android:id="@+id/Profile_tV_phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Номер телефона"
+        android:textColor="#BDBDBD"
+        app:layout_constraintStart_toStartOf="@id/Profile_eT_phoneNumber"
+        app:layout_constraintBottom_toTopOf="@id/Profile_eT_phoneNumber"
+        >
+    </TextView>
+    <!-- Номер телефона -->
+    <EditText
+        android:id="@+id/Profile_eT_phoneNumber"
+        android:layout_width="315dp"
+        android:layout_height="42dp"
+        android:background="@drawable/corner_round_et"
+        android:inputType="phone"
+        android:autofillHints="phone"
+        android:text="+7 938 316-76-77"
+        android:gravity="center"
+        android:textColor="#5F5E5E"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="160dp">
+    </EditText>
+
+    <!-- Электронная почта -->
+    <TextView
+        android:id="@+id/Profile_tV_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Электронная почта"
+        android:textColor="#BDBDBD"
+        app:layout_constraintStart_toStartOf="@id/Profile_eT_email"
+        app:layout_constraintBottom_toTopOf="@id/Profile_eT_email"
+        />
+    <!-- Электронная почта -->
+    <EditText
+        android:id="@+id/Profile_eT_email"
+        android:layout_width="315dp"
+        android:layout_height="42dp"
+        android:background="@drawable/corner_round_et"
+        android:inputType="textEmailAddress"
+        android:text="semyonkarabanov@gmail.com"
+        android:gravity="center"
+        android:textColor="#5F5E5E"
+        android:enabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Profile_eT_phoneNumber"
+        android:layout_marginTop="32dp"
+        />
+
+    <!-- Фамилия -->
+    <TextView
+        android:id="@+id/Profile_tV_lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Фамилия"
+        android:textColor="#BDBDBD"
+        app:layout_constraintStart_toStartOf="@id/Profile_eT_lastname"
+        app:layout_constraintBottom_toTopOf="@id/Profile_eT_lastname"
+        />
+    <!-- Фамилия -->
+    <EditText
+        android:id="@+id/Profile_eT_lastname"
+        android:layout_width="315dp"
+        android:layout_height="42dp"
+        android:background="@drawable/corner_round_et"
+        android:inputType="text"
+        android:text="Карабанов"
+        android:textColor="#5F5E5E"
+        android:enabled="false"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Profile_eT_email"
+        android:layout_marginTop="32dp"
+        />
+
+    <!-- Имя -->
+    <TextView
+        android:id="@+id/Profile_tV_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Имя"
+        android:textColor="#BDBDBD"
+        app:layout_constraintStart_toStartOf="@id/Profile_eT_name"
+        app:layout_constraintBottom_toTopOf="@id/Profile_eT_name"
+        />
+    <!-- Имя -->
+    <EditText
+        android:id="@+id/Profile_eT_name"
+        android:layout_width="315dp"
+        android:layout_height="42dp"
+        android:background="@drawable/corner_round_et"
+        android:inputType="text"
+        android:text="Семён"
+        android:enabled="false"
+        android:textColor="#5F5E5E"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Profile_eT_lastname"
+        android:layout_marginTop="32dp"
+        />
+
+    <!-- Отчество -->
+    <TextView
+        android:id="@+id/Profile_tV_middleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Евгеньевич"
+        android:enabled="false"
+        android:textColor="#BDBDBD"
+        app:layout_constraintStart_toStartOf="@id/Profile_eT_middleName"
+        app:layout_constraintBottom_toTopOf="@id/Profile_eT_middleName"
+        />
+    <!-- Отчество -->
+    <EditText
+        android:id="@+id/Profile_eT_middleName"
+        android:layout_width="315dp"
+        android:layout_height="42dp"
+        android:background="@drawable/corner_round_et"
+        android:inputType="text"
+        android:text="Евгеньевич"
+        android:enabled="false"
+        android:textColor="#5F5E5E"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Profile_eT_name"
+        android:layout_marginTop="32dp"
+        />
+
+    <!-- Кнопка "Принять" -->
+    <Button
+        android:layout_width="213dp"
+        android:layout_height="46dp"
+        android:textSize="18dp"
+        android:backgroundTint="#53BF57"
+        android:text="Принять"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Profile_eT_middleName"
+        android:layout_marginTop="24dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
